@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		61941EBD27D86F15005F0417 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61941EBC27D86F15005F0417 /* AppDelegate.swift */; };
 		61941EBF27D86F15005F0417 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61941EBE27D86F15005F0417 /* SceneDelegate.swift */; };
-		61941EC127D86F15005F0417 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61941EC027D86F15005F0417 /* ViewController.swift */; };
 		61941EC427D86F15005F0417 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61941EC227D86F15005F0417 /* Main.storyboard */; };
 		61941EC627D86F17005F0417 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61941EC527D86F17005F0417 /* Assets.xcassets */; };
 		61941EC927D86F17005F0417 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61941EC727D86F17005F0417 /* LaunchScreen.storyboard */; };
+		61941ED827D86FE3005F0417 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61941ED727D86FE3005F0417 /* LoginController.swift */; };
+		61941EDA27D879DB005F0417 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61941ED927D879DB005F0417 /* Extensions.swift */; };
+		61941EDC27D89EFC005F0417 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61941EDB27D89EFC005F0417 /* SignUpController.swift */; };
+		61941EDE27D8ABCD005F0417 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61941EDD27D8ABCD005F0417 /* AuthButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		61941EB927D86F15005F0417 /* UberRides.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberRides.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61941EBC27D86F15005F0417 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61941EBE27D86F15005F0417 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		61941EC027D86F15005F0417 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		61941EC327D86F15005F0417 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		61941EC527D86F17005F0417 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61941EC827D86F17005F0417 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61941ECA27D86F17005F0417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61941ED727D86FE3005F0417 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		61941ED927D879DB005F0417 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		61941EDB27D89EFC005F0417 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		61941EDD27D8ABCD005F0417 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		61941EBB27D86F15005F0417 /* UberRides */ = {
 			isa = PBXGroup;
 			children = (
+				61941ED627D86F46005F0417 /* Model */,
+				61941ED527D86F44005F0417 /* View */,
+				61941ED427D86F43005F0417 /* Controller */,
+				61941ED327D86F41005F0417 /* Service */,
+				61941ED027D86F37005F0417 /* Utils */,
 				61941EBC27D86F15005F0417 /* AppDelegate.swift */,
 				61941EBE27D86F15005F0417 /* SceneDelegate.swift */,
-				61941EC027D86F15005F0417 /* ViewController.swift */,
 				61941EC227D86F15005F0417 /* Main.storyboard */,
 				61941EC527D86F17005F0417 /* Assets.xcassets */,
 				61941EC727D86F17005F0417 /* LaunchScreen.storyboard */,
 				61941ECA27D86F17005F0417 /* Info.plist */,
 			);
 			path = UberRides;
+			sourceTree = "<group>";
+		};
+		61941ED027D86F37005F0417 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				61941ED927D879DB005F0417 /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		61941ED327D86F41005F0417 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		61941ED427D86F43005F0417 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				61941ED727D86FE3005F0417 /* LoginController.swift */,
+				61941EDB27D89EFC005F0417 /* SignUpController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		61941ED527D86F44005F0417 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				61941EDD27D8ABCD005F0417 /* AuthButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		61941ED627D86F46005F0417 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61941EC127D86F15005F0417 /* ViewController.swift in Sources */,
+				61941EDC27D89EFC005F0417 /* SignUpController.swift in Sources */,
+				61941EDE27D8ABCD005F0417 /* AuthButton.swift in Sources */,
 				61941EBD27D86F15005F0417 /* AppDelegate.swift in Sources */,
+				61941ED827D86FE3005F0417 /* LoginController.swift in Sources */,
 				61941EBF27D86F15005F0417 /* SceneDelegate.swift in Sources */,
+				61941EDA27D879DB005F0417 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
